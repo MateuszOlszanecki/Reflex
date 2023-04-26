@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflex</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <audio src="click.wav" class="clickAudio"></audio>
+    <audio src="error.wav" class="errorAudio"></audio>
+
+    <div class="blank"></div>
+    <div class="menu">
+        <div class="titleName">Reflex</div>
+        <div class="blank"></div>
+        <label for="pickGrid">Pick a grid size</label>
+        <select class="pickGrid" name="pickGrid">
+            <option value="1grid">1x1</option>
+            <option value="2grid">2x2</option>
+            <option value="3grid" selected>3x3</option>
+            <option value="4grid">4x4</option>
+        </select>
+        <input type="text" class="pickedName" placeholder="Pick a name">
+        <button class="startGame">Start</button>
+        <button class="record">Record</button>
+        <div class="bestString">There is no record yet</div>
+    </div>
+
+    <div class="gui">
+        <div class="titleName">Reflex</div>
+        <div class="data">
+            <div class="time">00:00:00</div>
+            <div class="score">0/50</div>
+        </div>
+        <div class="board1">
+            <div class="tile"></div>
+        </div>
+        <div class="board2">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <div class="board3">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+        <div class="board4">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
